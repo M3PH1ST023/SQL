@@ -13,9 +13,6 @@ SELECT CourseName, Credits FROM courses;
 -- select distinct data from column in table
 SELECT DISTINCT CourseName FROM courses;
 
--- TOTAL COUNT OF DATA ON SELECTION and show column name as Total_Courses
-SELECT COUNT(DISTINCT CourseName) AS Total_Courses FROM courses;
-
 -- Using WHERE clause for filtering
 SELECT * FROM students WHERE Major="Mathematics";
 
@@ -29,3 +26,7 @@ SELECT * FROM students WHERE Major="Physics" or StudentID>3;
 -- NOT
 SELECT * FROM enrollments WHERE StudentID NOT IN (1, 2, 3);
 
+-- Between range for selection
+SELECT * FROM courses WHERE CourseID BETWEEN 101 AND 105;
+SELECT * FROM courses WHERE CourseID NOT BETWEEN 101 AND 105;
+SELECT * FROM enrollments WHERE EnrollmentDate BETWEEN '2023-01-01' AND '2023-01-31';
