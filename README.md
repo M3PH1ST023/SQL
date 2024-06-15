@@ -1,5 +1,9 @@
 # SQL
 
+### SQL SCHEMA
+
+<img src="./schema.png">
+
 ## TYPES OF QUERIES IN SQL
 
 -   DDL
